@@ -1,0 +1,39 @@
+.txtroot{
+    cursor: pointer;
+    display: flex; 
+    width: fit-content;
+    flex-direction: column; 
+}
+
+.span {
+    position: relative;
+    top: -5px;
+}
+
+.txtbox {
+    width:200px;
+    height: 30px;
+    background: white;
+    cursor: pointer;
+    border: none;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    outline: none;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.txtbox:focus::placeholder {
+    color:transparent;  
+}
+
+.txtbox:focus{
+    border-bottom: 2px solid lightblue;
+}
